@@ -1,8 +1,8 @@
 import {Config} from 'aurelia-view-manager';
 
 // added for bundling
-import {Datatable} from './datatable'; // eslint-disable-line no-unused-vars
-import {ConvertManagerValueConverter} from './convert-manager'; // eslint-disable-line no-unused-vars
+export {Datatable} from './datatable';
+export {ConvertManagerValueConverter} from './convert-manager';
 
 export function configure(aurelia) {
   aurelia.plugin('aurelia-pager');
@@ -13,3 +13,7 @@ export function configure(aurelia) {
 
   aurelia.globalResources('./datatable');
 }
+
+export {
+  Config
+};
